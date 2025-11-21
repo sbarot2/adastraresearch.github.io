@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad Astra DAQ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero hero-sub">
+  <img src="assets/logo.png" alt="Ad Astra Logo" class="logo">
+  <h1>Ad Astra DAQ</h1>
+  <p>Modular DAQ hardware and software for complex experimental systems.</p>
+  <a href="index.html" class="back-link">← Back to Home</a>
+</header>
+
+<section class="section">
+  <h2>Platform Overview</h2>
+  <p>Ad Astra DAQ is a Python-based data acquisition system with a web UI, designed to coordinate multiple instruments and custom hardware boxes. It supports real-time visualization, logging to SQLite, and flexible instrument wrappers so nearly any device that can talk to a computer can be integrated.</p>
+</section>
+
+<section class="section">
+  <h2>Hardware Modules</h2>
+  <h3>CalBox</h3>
+  <ul>
+    <li>PT1000 RTD temperature inputs (via custom USB cabling)</li>
+    <li>K-type thermocouple channels</li>
+    <li>Isolated voltage and current measurement channels (including up to kV ranges)</li>
+    <li>Flow meters, pump control, and power measurement for calorimetry</li>
+    <li>Ethernet-based communication to the DAQ server</li>
+  </ul>
+  <h3>RedBox</h3>
+  <ul>
+    <li>12V and 24V DC outputs</li>
+    <li>Multiple shunt-based current measurement channels</li>
+    <li>Digital inputs and outputs with selectable levels</li>
+    <li>RS-232 and RS-485 ports</li>
+    <li>120V AC mains relay control</li>
+    <li>Ethernet communication for coordination with other modules</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Data Storage</h2>
+  <p>Experimental data is stored in SQLite using a structured schema with:</p>
+  <ul>
+    <li>Experiment/session tables for high-level runs</li>
+    <li>Channel and channel-group definitions</li>
+    <li>Time-series measurement tables with timestamps, values, and metadata</li>
+    <li>Configuration and log tables to make runs reproducible</li>
+  </ul>
+  <p>This approach makes it easy to export to CSV for quick analysis, or to connect Python notebooks directly to the database for deeper work.</p>
+</section>
+
+<section class="section">
+  <h2>Demo & Resources</h2>
+  <p>Watch a short demo of the current DAQ web UI and follow along as the system streams real-time data from multiple channels.</p>
+  <div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VNluDIoTd84" title="Ad Astra DAQ Demo" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <p class="center"><a href="https://www.youtube.com/@adastraresearch" target="_blank">More videos on the Ad Astra Research YouTube channel</a></p>
+</section>
+
+<footer>
+  <p>Contact: <a href="mailto:shriji@ad-astra-research.com">shriji@ad-astra-research.com</a></p>
+  <p>© 2025 Ad Astra</p>
+</footer>
+</body>
+</html>

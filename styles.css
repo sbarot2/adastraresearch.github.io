@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f9f9f9;
+}
+
+a { color: #0b214f; }
+
+.hero {
+  background: #0b214f;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem 2.5rem;
+}
+
+.hero-sub {
+  padding-top: 2.5rem;
+}
+
+.logo {
+  width: 110px;
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  margin: 0.2rem 0;
+}
+
+.hero p {
+  margin-top: 0.3rem;
+}
+
+.hero-buttons {
+  margin-top: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.2rem 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #0b214f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.section h2 {
+  color: #0b214f;
+}
+
+.video-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.qr-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.qr-card {
+  text-align: center;
+}
+
+.qr {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 0.4rem;
+}
+
+footer {
+  background: #0b214f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
