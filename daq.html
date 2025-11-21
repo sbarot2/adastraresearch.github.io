@@ -15,50 +15,32 @@
 </header>
 
 <section class="section">
-  <h2>Platform Overview</h2>
-  <p>Ad Astra DAQ is a Python-based data acquisition system with a web UI, designed to coordinate multiple instruments and custom hardware boxes. It supports real-time visualization, logging to SQLite, and flexible instrument wrappers so nearly any device that can talk to a computer can be integrated.</p>
+  <h2>CalBox Module</h2>
+  <img src="assets/Calbox.jpg" alt="CalBox Image" class="calbox-img">
+  <p>The CalBox is a multi-sensor, high-isolation DAQ module designed for thermal, electrical, and calorimetric measurements.</p>
+  <ul>
+    <li>PT1000 RTD inputs via custom shielded USB cables</li>
+    <li>K-type thermocouple inputs</li>
+    <li>Isolated high-voltage tolerant ADC channels</li>
+    <li>Pump/flow control and power measurement</li>
+    <li>Ethernet communication</li>
+  </ul>
 </section>
 
 <section class="section">
-  <h2>Hardware Modules</h2>
-  <h3>CalBox</h3>
-  <ul>
-    <li>PT1000 RTD temperature inputs (via custom USB cabling)</li>
-    <li>K-type thermocouple channels</li>
-    <li>Isolated voltage and current measurement channels (including up to kV ranges)</li>
-    <li>Flow meters, pump control, and power measurement for calorimetry</li>
-    <li>Ethernet-based communication to the DAQ server</li>
-  </ul>
-  <h3>RedBox</h3>
+  <h2>RedBox Module</h2>
   <ul>
     <li>12V and 24V DC outputs</li>
-    <li>Multiple shunt-based current measurement channels</li>
-    <li>Digital inputs and outputs with selectable levels</li>
-    <li>RS-232 and RS-485 ports</li>
-    <li>120V AC mains relay control</li>
-    <li>Ethernet communication for coordination with other modules</li>
+    <li>Multiple current shunt channels</li>
+    <li>Digital IO with selectable logic levels</li>
+    <li>RS-232 & RS-485 interfaces</li>
+    <li>AC mains control relay</li>
   </ul>
 </section>
 
 <section class="section">
   <h2>Data Storage</h2>
-  <p>Experimental data is stored in SQLite using a structured schema with:</p>
-  <ul>
-    <li>Experiment/session tables for high-level runs</li>
-    <li>Channel and channel-group definitions</li>
-    <li>Time-series measurement tables with timestamps, values, and metadata</li>
-    <li>Configuration and log tables to make runs reproducible</li>
-  </ul>
-  <p>This approach makes it easy to export to CSV for quick analysis, or to connect Python notebooks directly to the database for deeper work.</p>
-</section>
-
-<section class="section">
-  <h2>Demo & Resources</h2>
-  <p>Watch a short demo of the current DAQ web UI and follow along as the system streams real-time data from multiple channels.</p>
-  <div class="video-wrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VNluDIoTd84" title="Ad Astra DAQ Demo" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <p class="center"><a href="https://www.youtube.com/@adastraresearch" target="_blank">More videos on the Ad Astra Research YouTube channel</a></p>
+  <p>Data is stored in a structured SQLite schema with experiment/session tracking, channel groups, time-series values, logs, and metadata.</p>
 </section>
 
 <footer>
